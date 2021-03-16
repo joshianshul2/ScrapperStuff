@@ -84,7 +84,7 @@ DATABASES = {
         'PASSWORD':'anshul123',
         'HOST':'postgresql-19097-0.cloudclusters.net',
         'PORT' :19097
-        'listen_addresses':'204.2.195.96'
+#         'listen_addresses':'204.2.195.96'
     }
 }
 # DATABASES = {
