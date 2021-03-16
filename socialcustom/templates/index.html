@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>DashBoard</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="{% static 'css/theme-1.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+	<link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
+<!--	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<!--	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>-->
+<!--	<link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">-->
+
+<style>
+
+p {
+    font-size: 1rem;
+    line-height: 2.2;
+}
+
+p:last-child { margin-bottom: 0; }
+
+.tm-bg-transparent-black {
+    background-color: rgba(0,0,0,0.25);
+    padding: 30px;
+}
+
+/*.tm-contact-box-pad { padding: 60px 55px; }*/
+/*.tm-border-white { border: 1px solid white; }*/
+/*.media { align-items: center; }*/
+
+/*.tm-icon-circled {*/
+/*    font-size: 3rem;*/
+/*    border-radius: 90%;*/
+/*    border: 1px solid navy;*/
+/*    padding: 50px;*/
+/*    display: -webkit-box;*/
+/*    display: -ms-flexbox;*/
+/*    display: flex;*/
+
+/*    -webkit-box-align: center;*/
+/*    -ms-flex-align: center;*/
+/*            align-items: center;*/
+/*    -webkit-box-pack: center;*/
+/*    -ms-flex-pack: center;*/
+/*            justify-content: center;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*}*/
+.circular--square {
+  border-radius: 10%;
+}
+.tm-font-big { font-size: 1.3rem; }
+
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.tm-main {
+    height: 100%;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.tm-main-row {
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+
+
+
+
+/*!*.slick-dots { bottom: -45px; }*!*/
+/*!*.slick-dots li button:before { font-size: 20px; }*!*/
+/*!*.slick-slide { margin: 0 10px; }*!*/
+/*!*.slick-list { margin: 0 -10px; }*!*/
+/*!*.tm-text-shadow { text-shadow: 0px 3px 2px rgba(50, 50, 50, 1); }*!*/
+
+/*!*.tm-section {*!*/
+/*!*    max-width: 100%;*!*/
+/*!*    width: auto;*!*/
+/*!*    background: transparent;*!*/
+/*}*/
+
+.col-md-6.tm-contact-col { margin-bottom: 0; }
+
+/*.tm-img-slider { max-width: 940px; }*/
+/*#tm-section-1 { max-width: 700px; }*/
+
+/*.tm-icon-media {*/
+/*  margin-right: 1.5rem;*/
+/*  margin-bottom: 0;*/
+/*}*/
+
+</style>
+
+</head> 
+
+<body>
+
+
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0" ><a href="index.html">Sociologistic Stuff</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'images/1.jpg' %}" alt="image" >
+					
+					<div class="bio mb-3">Hi, my name is Anshul Joshi. Briefly introduce yourself here. You can also provide a link to the about page.<br><a href="about.html">Find out more about me</a></div><!--//bio-->
+<!--					<ul class="social-list list-inline py-3 mx-auto">-->
+<!--			            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>-->
+<!--			            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>-->
+<!--			            <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>-->
+<!--			            <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>-->
+<!--			            <li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>-->
+<!--			        </ul>&lt;!&ndash;//social-list&ndash;&gt;-->
+			        <hr>
+					<br>
+					<br>
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item active">
+					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>DashBoard <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="blog-post.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Profile</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Us</a>
+					</li>
+				</ul>
+				
+				<div class="my-2 my-md-3">
+				    <a class="btn btn-primary" href="https://themes.3rdwavemedia.com/" target="_blank">Get in Touch</a>
+				</div>
+
+			</div>
+
+
+		</nav>
+
+    </header>
+<!--    Anji-->
+
+
+	<div class="main-wrapper" style="margin-top: -20px">
+	    <section class="cta-section theme-bg-light py-5">
+		    <div class="container text-center">
+			    <h4 style="color: indigo; font-family:comic sans;">Welcome to Sociologistic Stuff</h4>
+			    <p style="color:green; margin-top: -12px;">( A place to get all social stuff )</p>
+
+			    <!-- <div class="intro">Its a Platform to Interact to All Social Stuff At One Place.</div> -->
+			   <!--  <form class="signup-form form-inline justify-content-center pt-3">
+                    <div class="form-group">
+                        <label class="sr-only" for="semail">Your email</label>
+                        <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Enter email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+		    </div>//container-->
+
+	     </section>
+<section id="tm-section-3" class="tm-section">
+	<br>
+						<div class="row mb-3">
+							<br>
+							<br>
+							<header class="col-xl-12"><h4 class="tm-text-shadow" style="font-family: Comic Sans MS; margin-top: 0px;">Our Company </h4></header>
+							<br>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-1">
+								<div class="media tm-bg-transparent-black tm-border-white">
+
+									<div class="media-body" style="margin-top: 0px;">
+
+										<img  class="circular--square"   src="{% static 'images/f1.png' %}"  height="50" width="50" radius="10%">
+										<label><h3 >&nbsp&nbspFacebook </h3></label>
+											<br>
+																					
+											<br>
+
+									<div style="padding-left: 7px;">
+										<form>
+											<label>Username or Phone No</label>
+											<label style="margin-left: 58px; ">Password</label>
+											<br>
+											<input type="text" name="username">
+											
+				
+											<input style="margin-left: 25px;" type="Password" name="password">
+										<br>
+										<br>
+											<button style="margin-left:415px;" type="button" class="btn btn-primary">Submit</button>
+
+										</form>
+									
+
+										<p style="margin-top: -20px;">For more Details click here on <u style="color: yellow;"><a href="fb" >more details</a></u></p>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+								<div class="media tm-bg-transparent-black tm-border-white">
+
+									<div class="media-body">
+									<img  class="circular--square"  src="{% static 'images/twit.jpg' %}"  height="50" width="50" >
+										<label><h3>&nbsp&nbsptwiter</h3></label>
+											<br>
+											<br>
+										<div class="media-body" style="margin-top: 0px;">
+
+										Anshul
+
+									<div style="padding-left: 7px;">
+										<form>
+											<label>Username or Phone No</label>
+											<label style="margin-left: 58px; ">Password</label>
+											<br>
+											<input type="text" name="username">
+											
+				
+											<input style="margin-left: 25px;" type="Password" name="password">
+										<br>
+										<br>
+											<button style="margin-left:415px;" type="button" class="btn btn-primary">Submit</button>
+											<p style="margin-top: -20px;">For more Details click here on <u style="color: yellow;"><a href="twitter" >more details</a></u></p>
+										</form>
+									
+
+
+									</div>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-1">
+								<div class="media tm-bg-transparent-black tm-border-white">
+
+									<div class="media-body">
+									<img  class="circular--square"  src="{% static 'images/lk.jpg' %}"  height="50" width="50" >
+										<label><h3>&nbsp&nbspLinkdien</h3></label>
+										<br>
+										<br>
+										<div class="media-body" style="margin-top: 0px;">
+
+									<div style="padding-left: 7px;">
+										<form>
+											<label>Username or Phone No</label>
+											<label style="margin-left: 58px; ">Password</label>
+											<br>
+											<input type="text" name="username">
+											
+				
+											<input style="margin-left: 25px;" type="Password" name="password">
+										<br>
+											<br>
+											<button style="margin-left:415px;" type="button" class="btn btn-primary">Submit</button>
+											<p style="margin-top: -20px;">For more Details click here on <u style="color: yellow;"><a href="linkdien" >more details</a></u></p>
+										</form>
+									
+
+
+									</div>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-2">
+
+								<div class="media tm-bg-transparent-black tm-border-white">
+
+									<div class="media-body">
+										<img  class="circular--square"  src="{% static 'images/insta.jpg' %}"  height="50" width="50" >
+										<label><h3>&nbsp&nbspInstagram</h3></label>
+										<br>
+										<br>
+										<form>
+											<label>Username or Phone No</label>
+											<label style="margin-left: 58px; ">Password</label>
+											<br>
+											<input type="text" name="username">
+											
+				
+											<input style="margin-left: 25px;" type="Password" name="password">
+										<br>
+										<br>
+											<button style="margin-left:415px;" type="button" class="btn btn-primary">Submit</button>
+
+										</form>
+										<p style="margin-top: -20px;">For more Details click here on <u style="color: yellow;"><a href="insta" >more details</a></u></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+	        <div align="center" style="margin-top: 60px;">
+				<a href="https://www.google.com/?client=safari&channel=mac_bm" target="_blank"> <img src="{%  static 'images/aa.jpeg' %}" height="110" width="110"></a>
+				<h3 style="color: indigo;">Add More Social Account </h3>
+
+
+	</div>
+
+    </div><!--//main-wrapper-->
+
+
+    
+    
+    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
+    <div id="config-panel" class="config-panel d-none d-lg-block">
+        <div class="panel-inner">
+            <a id="config-trigger" class="config-trigger config-panel-hide text-center" href="#"><i class="fas fa-cog fa-spin mx-auto" data-fa-transform="down-6" ></i></a>
+            <h5 class="panel-title">Choose Colour</h5>
+            <ul id="color-options" class="list-inline mb-0">
+                <li class="theme-1 active list-inline-item"><a data-style="assets/css/theme-1.css" href="#"></a></li>
+                <li class="theme-2  list-inline-item"><a data-style="assets/css/theme-2.css" href="#"></a></li>
+                <li class="theme-3  list-inline-item"><a data-style="assets/css/theme-3.css" href="#"></a></li>
+                <li class="theme-4  list-inline-item"><a data-style="assets/css/theme-4.css" href="#"></a></li>
+                <li class="theme-5  list-inline-item"><a data-style="assets/css/theme-5.css" href="#"></a></li>
+                <li class="theme-6  list-inline-item"><a data-style="assets/css/theme-6.css" href="#"></a></li>
+                <li class="theme-7  list-inline-item"><a data-style="assets/css/theme-7.css" href="#"></a></li>
+                <li class="theme-8  list-inline-item"><a data-style="assets/css/theme-8.css" href="#"></a></li>
+            </ul>
+            <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
+        </div><!--//panel-inner-->
+    </div><!--//configure-panel-->
+
+
+
+
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="assets/js/demo/style-switcher.js"></script>     
+    
+
+</body>
+</html> 
+

@@ -1,0 +1,201 @@
+{% load static %}
+{% load render_table from django_tables2 %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scrapper Web</title>
+	 <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{% static 'css2/bootstrap.min.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{% static 'css2/style.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'css2/responsive.css' %}">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static 'images2/fevicon.png" type="image/gif' %}" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'css2/jquery.mCustomScrollbar.min.css' %}">
+      <!-- Tweaks for older IEs-->
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="{% static 'css2/owl.carousel.min.css' %}">
+      <link rel="stylesheet" href="{% static 'css2/owl.theme.default.min.css' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script href="{%  static 'fonts2/favicon.js' %}" crossorigin='anonymous'></script>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'template.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+{#        .div-table {#}
+{#  display: table;#}
+{#  width: auto;#}
+{#  background-color: #eee;#}
+{#  border: 1px solid #666666;#}
+{#  border-spacing: 5px; /* cellspacing:poor IE support for  this */#}
+{#}#}
+{#.div-table-row {#}
+{#  display: table-row;#}
+{#  width: auto;#}
+{#  clear: both;#}
+{#}#}
+{#.div-table-col {#}
+{#  float: left; /* fix for  buggy browsers */#}
+{#  display: table-column;#}
+{#  width: 200px;#}
+{#  background-color: #ccc;#}
+{#}#}
+        * {
+  box-sizing: border-box;
+}
+.aParent div {
+    float: left;
+    clear: none;
+}
+.box {
+  float: left;
+  width: 83.33%;
+  padding: 50px;
+    margin-left: 120px;
+    border: 2px  ;
+    border-radius: 25px;
+}
+
+{#.clearfix::after {#}
+{#  content: "";#}
+{#  clear: both;#}
+{#  display: table;#}
+{#}#}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid green;
+    color: darkgreen;
+}
+</style>
+</head>
+<body>
+<br>
+    <nav class="nav nav-pills nav-justified">
+        <br>
+        <div class="triangle-up" style="margin-left: 10px;"></div>
+ <h2> <b>Logo</b></h2>
+        <ul style="margin-left: 1100px;">
+            <li><img src="{% static 'images2/a.svg' %}" height="40" width="40" /> </li>
+
+            </ul>
+         &nbsp;<h2>Set Alert</h2>
+
+</nav>
+
+      <section>
+
+
+<div class="clearfix ">
+  <div class="box " style="background-color:#696969; margin-top: 110px;">
+<h1 style="color: white;margin-left: 10px;">Land For Sale in America</h1>
+
+      <form method="post" action="/LandSave">
+                         {% csrf_token %}
+
+<!-- Example single danger button -->
+
+                                    <br>
+
+          <div class="container">
+
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+<!-- Example split danger button -->
+
+        <!-- Default dropup button -->
+<div class="btn-group ">
+    <input class="form-control"  style="width: 700px;height: 50px;" placeholder="Enter a State , city Or ID" type="search" name="txtsearch">
+    <input class="form-control py-2 border-right-0 border" type="search" name="title_or_author" placeholder="Title or author..." />
+
+  <button type="button" class="btn btn-secondary dropdown-toggle" style="height: 50px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Price
+  </button>
+    <button type="button" class="btn btn-secondary dropdown-toggle" style="height: 50px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Acres
+  </button>
+
+
+</div>
+
+
+
+                               <button type="submit" class="btn btn-primary" style="margin-top: 70px;">Search</button>
+
+                        </div>
+                     </form>
+
+
+  </div>
+</div>
+      </section>
+<div align="center">
+    <br>
+<b><h1 style="color: #2b542c;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 60px;">Property data</h1></b>
+    <br>
+    {% load django_tables2 %}
+
+
+<div class="" style="color: #2f9574; width:80%; background-color: whitesmoke">
+<table class="pinned-row" border="2" style="background-color: whitesmoke">
+{#        {% render_table table %}#}
+    </table>
+    </div>
+    </div>
+<table border="1"  style="margin-left: 150px;">
+<tr style="background-color: #2b542c;color: whitesmoke;">
+<td>PropId</td>
+<td>Address</td>
+<td>City</td>
+    <td>State</td>
+<td>Country</td>
+<td>Zip Code</td>
+    <td>Net Price</td>
+<td>Rate(Per Area)</td>
+{#    <td>Area</td>#}
+    <td>Url</td>
+    <td>Remark</td>
+</tr>
+
+{% for prop in queryset %}
+<tr>
+    <td>{{ prop.lwPropertyId }}</td>
+    <td>{{ prop.address }}</td>
+    <td>{{ prop.city }}</td>
+    <td>{{ prop.state }}</td>
+    <td>{{ prop.country }}</td>
+    <td>{{ prop.zip }}</td>
+    <td>{{ prop.price }}</td>
+{#    <td>{{ prop.area }}</td>#}
+    <td>{{ prop.Rate }}</td>
+    <td><a href=" {{ prop.Url }}" target="_blank">{{ prop.Url }}</a></td>
+    <td>
+    <form method="post" action="/">
+                         {% csrf_token %}
+
+            <input type="text" id='Descrpt' style="width: 200px;" class="form-control" placeholder="Text" />
+        <button class="btn btn-primary" type="submit">
+							Save
+						</button>
+        </form>
+    </td>
+
+
+
+</tr>
+{% endfor %}
+</table>
+
+
+</body>
+</html>
