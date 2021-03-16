@@ -25,7 +25,7 @@ SECRET_KEY = 'y8r9a7226x8pfn9u45a^yeg+7@vgi!4bs+v9b@w3_1*)vh7ki6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -80,10 +80,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'PropertyStuff',
-        'USER': 'postgres',
+        'USER': 'PostgreSQL-19097',
         'PASSWORD':'anshul123',
-        'HOST':'localhost',
-        # 'PORT' :5432
+        'HOST':'postgresql-19097-0.cloudclusters.net',
+        'PORT' :19097
         'listen_addresses':'*'
     }
 }
