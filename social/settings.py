@@ -79,9 +79,9 @@ DJANGO_TABLES2_TEMPLATE = "django_tables2/bootstrap.html"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'PropertyStuff',
-        'USER': 'PostgreSQL-19097',
-        'PASSWORD':'anshul123',
+        'NAME': 'PostgreSQL-19097',
+        'USER': 'PropertyMaster',
+        'PASSWORD':'qwerty@2020',
         'HOST':'postgresql-19097-0.cloudclusters.net',
         'PORT' :19097
 #         'listen_addresses':'204.2.195.96'
