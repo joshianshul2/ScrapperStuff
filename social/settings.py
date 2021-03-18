@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'PropertyMaster',
         'USER': 'PropertyMaster',
         'PASSWORD':'qwerty@2020',
-        'HOST':'localhost',
+        'HOST':'38.17.53.96',
         'PORT' :19097
 #         'listen_addresses':'204.2.195.96'
     }
