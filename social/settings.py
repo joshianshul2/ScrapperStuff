@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'PropertyMaster',
         'USER': 'PropertyMaster',
         'PASSWORD':'qwerty@2020',
-        'HOST':'pythonclusters-19262-0.cloudclusters.net',
+        'HOST':'postgresql-19097-0.cloudclusters.net',
         'PORT' :19097
 #         'listen_addresses':'204.2.195.96'
     }
